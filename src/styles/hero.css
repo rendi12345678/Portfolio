@@ -1,0 +1,82 @@
+.hero-section {
+  --duration: 6500ms;
+  background-color: #eeeeee;
+  width: 100vw;
+  margin: 5.5rem calc(-50vw - -50%);
+  margin-bottom: 0;
+}
+
+.hero-section .hero-container {
+  display: grid;
+  align-items: center;
+  margin: 0 auto;
+  grid-template-columns: 1fr 1fr;
+  padding: 4rem;
+  max-width: 80rem;
+}
+
+.hero-section h1 {
+  font-size: 3.6rem;
+  line-height: 4.5rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.hero-section h2 {
+  font-size: 2.4rem;
+  line-height: 1.6;
+  font-weight: bold;
+  text-decoration: underline;
+  margin-bottom: 1.5rem;
+  color: #656565;
+}
+
+.hero-section p {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: #686868;
+}
+
+.hero-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image img {
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  width: 20rem;
+  height: 24rem;
+  object-fit: cover;
+  animation: imageAnimation 6000ms infinite;
+  box-shadow: .2rem .2rem .2rem rgba(0, 0, 0, .15);
+}
+
+.contact-btn {
+  background-color: #0047AB;
+  color: #fff;
+  border: 0;
+  margin-top: 2rem;
+  padding: 1.5rem 3rem;
+  border-radius: 1.5rem;
+  font-size: 1.8rem;
+  box-shadow: .2rem .2rem .2rem rgba(0, 0, 0, .15);
+}
+
+/* Animation */
+@keyframes imageAnimation {
+  0% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    transition: 3000ms;
+  }
+  
+  50% {
+    border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+    transition: 3000ms;
+  }
+  
+  100% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+}
